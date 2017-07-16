@@ -1,7 +1,5 @@
 const React = require("react")
 require("./css/todoitem.css")
-
-
 const TodoItem = React.createClass({
 
     render:function() {
@@ -13,7 +11,7 @@ const TodoItem = React.createClass({
                     </div>
             </li>
         )
-    },
+    }, 
     handleDelete:function() {
       this.props.onDelete(this.props.item)
     }
